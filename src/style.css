@@ -1,0 +1,233 @@
+:root{
+    --icon_black: black;
+    --feed_background: rgba(255, 255, 255, 0.648);
+    --icon_white: white;
+    --input_background_color: white;
+}
+
+*{
+    font-size: 18px;
+    color: white;
+    font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+}
+body{
+    background-image: url('/resources/images/bg.png');
+    background-attachment: fixed;
+}
+#head{
+    position: sticky;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+#left_items{
+    display: flex;
+    align-items: center;
+}
+#left_items p{
+    margin-left: 10px;
+    font-size: 15px;
+}
+#apps{
+    margin: 10px 25px 10px 30px;
+    fill: var(--icon_white);
+    stroke-width: 5px;
+}
+#right_items{
+    display: flex;
+    align-items: center;
+}
+#notifications, #settings{
+    fill: var(--icon_white);
+    margin: 10px;
+}
+#input{
+    opacity: 0.8;
+    position: absolute !important;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 45px;
+    width: 65%;
+    background-color: var(--input_background_color);
+    border-radius: 25px;
+}
+#input input{
+    background-color: rgba(255, 255, 255, 0.044);
+    color: var(--icon_black);
+    border: none;
+    border-collapse: collapse;
+    height: 45px;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 25px 0px 0px 25px;
+    padding: 5px 0px 5px 15px;
+}
+#mic{
+    fill: var(--icon_black);
+    position: absolute !important;
+    right: 10%;
+    margin: 10px;
+    cursor: pointer;
+}
+#search_icon{
+    fill: var(--icon_black);
+    position: absolute !important;
+    right: 3%;
+    margin: 10px 0px 10px 10px;
+    cursor: pointer;
+}
+#dark_mode{
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px;
+}
+#light{
+    fill: var(--icon_white);
+    display: none;
+}
+#dark{
+    fill: var(--icon_white);
+    margin: 10px;
+    display: block;
+}
+.tooltip:hover .location{
+    visibility: visible;
+}
+.tooltip{
+    position: relative !important;
+    cursor: pointer;
+}
+.location{
+    visibility: hidden;
+    height: 300%;
+    width: 300%;
+    position: absolute !important;
+    z-index: 1;
+    bottom: -310%;
+    left: 5%;
+    background-color: rgba(6, 5, 5, 0.809);
+    border-radius: 10px;
+}
+.location p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#more{
+    fill: var(--icon_white);
+}
+#link_container{
+    height: 26px;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#link_container:hover{
+    background-color: rgba(23, 23, 23, 0.56);
+}
+#quick_links{
+    font-size: 18px;
+    position: absolute !important;
+    bottom: 20%;
+    right: 10%;
+    height: 10%;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+#link{
+    font-size: 15px;
+    margin-right: 2%;
+    font-weight: 600px;
+    width: 80%;
+}
+#main{
+    position: sticky !important;
+    top: 50px;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+#links{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    width: 70%;
+    visibility: collapse;
+
+}
+#links div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2%; */
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
+#links div:hover{
+    background-color: rgba(28, 28, 28, 0.692);
+    cursor: pointer;
+}
+#links div p{
+    position: absolute !important;
+    bottom: 2%;
+    font-size: 10px;
+}
+#links div img{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+}
+#add{
+    padding: 10px;
+}
+.feeds{
+    width: 100%;
+    height: 400px;
+    background-color: var(--feed_background);
+    background-blend-mode:darken;
+    color: white;
+    position: sticky;
+    top: 80%;
+    backdrop-filter: blur(5px);
+}
+#menu{
+    margin: 1%;
+    fill: var(--icon_black);
+}
+
+/*  MOBILE PHONES */
+@media screen and (max-width: 768px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #links{
+        left: 4%;
+    }
+}
+/* TABS */
+@media screen and (min-width: 768px){
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
