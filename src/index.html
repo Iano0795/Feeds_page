@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href= "/resources/images/discord.png">
-    <link rel="stylesheet" href="mystyle.scss">
+    <link rel="icon" href= "/resources/images/newspaper.png">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="/node_modules/jquery/src/css/"> -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
     <title>Feeds Page</title>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
-<body >
+<body id="body">
     <!-- HEAD SECTION -->
     <header id="head">
         <div id="left_items">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" id="apps">
                 <path d="M5.5 20.225q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm-13-6.5q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm-13-6.5q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Zm6.5 0q-.725 0-1.225-.5-.5-.5-.5-1.225 0-.725.5-1.225.5-.5 1.225-.5.725 0 1.225.5.5.5.5 1.225 0 .725-.5 1.225-.5.5-1.225.5Z" />
             </svg>
+            <div id="apps_container">
+                <a href="http://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer"><img src="/resources/images/instagram.png" alt=""></a>
+                <a href="http://github.com/login" target="_blank" rel="noopener noreferrer"><img src="/resources/images/github.png" alt=""></a>
+                <a href="http://www.linkedin.com/login" target="_blank" rel="noopener noreferrer"><img src="/resources/images/linkedin.png" alt=""></a><br>
+                <a href="http://mail.google.com" target="_blank" rel="noopener noreferrer"><img src="/resources/images/gmail.png" alt=""></a>
+                <a href="http://discord.com/" target="_blank" rel="noopener noreferrer"><img src="/resources/images/discord.png" alt=""></a>
+            </div>
             <div class="tooltip"><p>Location</p>
                 <span class="location">
                     <p>Showing location here</p>
@@ -45,6 +51,7 @@
             </div>
         </div>
     </header>
+    <!-- MAIN CONTENT -->
     <div id="main">
         <div id="input">
             <input type="text" value="Search the web" onfocus="input_focus()" id="input_field">
@@ -55,7 +62,8 @@
                 <path d="M19.125 20.225 13.4 14.5q-.75.6-1.838.938-1.087.337-2.087.337-2.675 0-4.512-1.837Q3.125 12.1 3.125 9.45q0-2.65 1.838-4.487Q6.8 3.125 9.45 3.125q2.65 0 4.5 1.838Q15.8 6.8 15.8 9.45q0 1.075-.337 2.1-.338 1.025-.938 1.75l5.8 5.8q.225.225.225.537 0 .313-.275.588-.25.25-.562.25-.313 0-.588-.25Zm-9.65-6.1q1.975 0 3.325-1.338 1.35-1.337 1.35-3.337T12.8 6.112q-1.35-1.337-3.325-1.337-2 0-3.35 1.337-1.35 1.338-1.35 3.338t1.35 3.337q1.35 1.338 3.35 1.338Z" />
             </svg>
             <marquee behavior="scroll" direction="">
-                HI😊 HAPPY TO HAVE YOUR HERE, "HAPPY ARE THOSE WHO BOUNCE FOR THEY SHALL COME BACK AGAIN😂"
+                HI😊 HAPPY TO HAVE YOUR HERE, "HAPPY ARE THOSE WHO BOUNCE FOR THEY SHALL COME BACK AGAIN😂_____    
+                IN THIS WORLD THERE IS ALWAYS A REPLACEMENT😒"
             </marquee>
         </div>
         <div id="quick_links" >
@@ -68,23 +76,23 @@
         </div>
         <div id="links">
             <div>
-                <img src="/resources/images/discord.png" alt="">
+                <img src="/resources/images/discord.png" alt="" onclick="window.location.href='https://discord.com/'">
                 <p>Discord</p>
             </div>
             <div>
-                <img src="/resources/images/github.png" alt="">
+                <img src="/resources/images/github.png" alt="" onclick="window.location.href='https://github.com/login'">
                 <p>Github</p>
             </div>
             <div>
-                <img src="/resources/images/gmail.png" alt="">
+                <img src="/resources/images/gmail.png" alt="" onclick="window.location.href='https://mail.google.com'">
                 <p>Gmail</p>
             </div>
             <div>
-                <img src="/resources/images/instagram.png" alt="">
+                <img src="/resources/images/instagram.png" alt="" onclick="window.location.href = 'https://www.instagram.com/?hl=en'">
                 <p>Instagram</p>
             </div>
             <div>
-                <img src="/resources/images/linkedin.png" alt="">
+                <img src="/resources/images/linkedin.png" alt="" onclick="window.location.href = 'https://www.linkedin.com/login'">
                 <p>Linkedin</p>
             </div>
             <div>
@@ -96,10 +104,119 @@
         </div>
     </div>
     <section class="feeds">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" id="menu">
-            <path d="M3.271 14.854q-.292 0-.511-.229-.218-.229-.218-.5 0-.292.218-.51.219-.219.511-.219h13.5q.291 0 .51.219.219.218.219.51 0 .271-.219.5-.219.229-.51.229Zm0-4.146q-.292 0-.511-.229-.218-.229-.218-.5 0-.291.218-.51.219-.219.511-.219h13.5q.291 0 .51.229.219.229.219.5 0 .292-.219.511-.219.218-.51.218Zm0-4.104q-.292 0-.511-.219-.218-.218-.218-.51 0-.271.218-.5.219-.229.511-.229h13.5q.291 0 .51.229.219.229.219.5 0 .292-.219.51-.219.219-.51.219Z" />
-        </svg>
-        
+        <div id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" id="menu" >
+                <path d="M3.271 14.854q-.292 0-.511-.229-.218-.229-.218-.5 0-.292.218-.51.219-.219.511-.219h13.5q.291 0 .51.219.219.218.219.51 0 .271-.219.5-.219.229-.51.229Zm0-4.146q-.292 0-.511-.229-.218-.229-.218-.5 0-.291.218-.51.219-.219.511-.219h13.5q.291 0 .51.229.219.229.219.5 0 .292-.219.511-.219.218-.51.218Zm0-4.104q-.292 0-.511-.219-.218-.218-.218-.51 0-.271.218-.5.219-.229.511-.229h13.5q.291 0 .51.229.219.229.219.5 0 .292-.219.51-.219.219-.51.219Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" id="more_horiz">
+                <path d="M5.125 10.958q-.396 0-.677-.281T4.167 10q0-.417.291-.688.292-.27.688-.27.396 0 .666.281.271.281.271.677 0 .417-.281.688-.281.27-.677.27Zm4.875 0q-.417 0-.688-.281-.27-.281-.27-.677 0-.417.281-.688.281-.27.677-.27.417 0 .688.281.27.281.27.677 0 .417-.281.688-.281.27-.677.27Zm4.854 0q-.396 0-.666-.281-.271-.281-.271-.677 0-.417.281-.688.281-.27.677-.27t.677.281q.281.281.281.677 0 .417-.291.688-.292.27-.688.27Z" />
+            </svg>
+        </div>
+        <div id="list_container">
+            <ul id="nav_list">
+                <li>World</li>
+                <li>Local</li>
+                <li>Politics</li>
+                <li>Entertainment</li>
+                <li>Shopping</li>
+                <li>Tours</li>
+            </ul>
+        </div>
+        <div id="first_feed">
+            <img src="/resources/images/tours/pexels-brent-olson-5219233.jpg" alt="">
+            <p><b>Icebergs of the greenland</b></p>
+            <p id="description">Due to global warming most of the icebergs are melting this causing a raise in ocean level in turn</br>
+                Most of this icebergs are available also in the southern part of greenland during winter seasons
+            </p>
+        </div>
+        <div id="second_feed">
+            <img src="/resources/images/tours/pexels-jaime-reimer-2662116.jpg" alt="">
+            <p><b>Blue lake in california</b></p>
+            <p id="description">
+                This beautiful blue lake found in the northern part of california was a trending scenery until the eruption <br>
+                of the big mountain which lead to the scenery destructon in the year 1918.
+            </p>
+        </div>
+        <div id="third_feed">
+            <img src="/resources/images/tours/pexels-luis-del-río-15286.jpg" alt="">
+            <p><b>Deepest green amazon scenery</b></p>
+            <p id="description">
+                Ever heard of the greeny dangerous area of the amazon?, if not, then here we show you the deepest dangerous <br>
+                area of the amazon in which the tour to the scenery needs specialised tour guide and guard.
+            </p>
+        </div>
+        <div id="fourth_feed">
+            <img src="/resources/images/tours/pexels-lumn-167699.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="fifth_feed">
+            <img src="/resources/images/tours/pexels-pixabay-235621.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="sixth_feed">
+            <img src="/resources/images/tours/pexels-roberto-nickson-2559941.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="seventh_feed">
+            <img src="/resources/images/politics/pexels-cottonbro-4669141.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="eigth_feed">
+            <img src="/resources/images/shopping/pexels-andretti-brown-3714083.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="nineth_feed">
+            <img src="/resources/images/shopping/pexels-erik-scheel-95425.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="tenth_feed">
+            <img src="/resources/images/shopping/pexels-karolina-grabowska-4968391.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="eleventh_feed">
+            <img src="/resources/images/shopping/pexels-laura-james-6097841.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
+        <div id="twelveth_feed">
+            <img src="/resources/images/shopping/pexels-muhammadtaha-ibrahim-ma'aji-5115728.jpg" alt="">
+            <p><b>Aerial view of the oregon bushes </b></p>
+            <p id="description">
+                This picture is one of the good aerial view of the a forest in the oregon state which is home for the near extinct<br>
+                gazelles in this forest the gazelles are under surveillance so as to guard the breed from extinction.
+            </p>
+        </div>
     </section>
     
   
@@ -107,18 +224,6 @@
 
     <!-- SCRIPTS ARE HERE -->
     <script src="script.js"></script>
-    <!-- JQUERY SCRIPT -->
-    <!-- <script type="text/javascript">
-        $(window).on('scroll', function (){
-            var scrollTop = $(window).scrollTop();
-            if(scrollTop > 50){
-                $('#main').stop().animate({height: "150px"}, 30);
-            }
-            else{
-                $('#main').stop().animate({height: "500px"},30);
-            }
-        });
-    </script> -->
 
    
 </body>

@@ -1,0 +1,24 @@
+#first_feed, #second_feed, #third_feed, #fourth_feed, #fifth_feed, #sixth_feed, #seventh_feed, #eigth_feed, #nineth_feed, #tenth_feed, #eleventh_feed, #twelveth_feed{
+    display: inline-block;
+    margin: 2%;
+    background-color: var(--icon_white);
+    border-radius: 25px;
+    color: var(--icon_black);
+    width: 18%;
+    height: 40%;
+    box-shadow: 2px 3px 4px black;
+    overflow: hidden;
+}
+#description{
+    /* visibility: collapse; */
+    color: var(--icon_black);
+}
+.feeds div img{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 25px;
+}
+.feeds div p{
+    color: red;
+}
